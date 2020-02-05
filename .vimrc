@@ -39,3 +39,4 @@ set backspace=indent,eol,start
 syntax on
 set encoding=utf-8 " for you complete me?
 set tabstop=4
+let g:clang_format#code_style = "chromium"

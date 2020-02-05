@@ -49,5 +49,10 @@ set textwidth=120
 " turn syntax highlighting on
 set t_Co=256
 
+highlight Pmenu ctermfg=2 ctermbg=3 guifg=#ffffff guibg=#0000ff
+" need to change the color of highlight... turn it off for now
+highlight clear SpellBad
+
+
 let g:clang_format#code_style = "chromium"
 let g:ycm_global_ycm_extra_conf = '$HOME/.ycm_extra_conf.py'

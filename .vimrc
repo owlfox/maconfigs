@@ -38,5 +38,16 @@ let g:ctrlp_cmd = 'CtrlP'
 set backspace=indent,eol,start
 syntax on
 set encoding=utf-8 " for you complete me?
-set tabstop=4
+
+" src: https://gist.github.com/rocarvaj/2513367
+" configure tabwidth and insert spaces instead of tabs
+set tabstop=4        " tab width is 4 spaces
+set shiftwidth=4     " indent also with 4 spaces
+set expandtab        " expand tabs to spaces
+" wrap lines at 120 chars. 80 is somewaht antiquated with nowadays displays.
+set textwidth=120
+" turn syntax highlighting on
+set t_Co=256
+
 let g:clang_format#code_style = "chromium"
+let g:ycm_global_ycm_extra_conf = '$HOME/.ycm_extra_conf.py'

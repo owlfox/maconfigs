@@ -96,4 +96,5 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias his="history"
+alias tmux="tmux -u"
 bindkey -v

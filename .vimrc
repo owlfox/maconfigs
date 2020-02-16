@@ -14,6 +14,12 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'kien/ctrlp.vim'
+
+"markdown tools are necessary
+"Plugin 'godlygeek/tabular'
+"Plugin 'plasticboy/vim-markdown'
+
+"dev tools... (need to setup ones for ruby/python/bash ..etc
 Bundle 'ycm-core/YouCompleteMe'
 Plugin 'rhysd/vim-clang-format'
 
@@ -37,7 +43,6 @@ let g:ctrlp_cmd = 'CtrlP'
 
 set backspace=indent,eol,start
 syntax on
-set encoding=utf-8 " for you complete me?
 
 " src: https://gist.github.com/rocarvaj/2513367
 " configure tabwidth and insert spaces instead of tabs
@@ -50,10 +55,27 @@ set textwidth=120
 set t_Co=256
 set number relativenumber
 
-highlight Pmenu ctermfg=2 ctermbg=3 guifg=#ffffff guibg=#0000ff
+"highlight Pmenu ctermfg=2 ctermbg=3 guifg=#ffffff guibg=#0000ff
 " need to change the color of highlight... turn it off for now
 highlight clear SpellBad
-
+"highlight link SyntasticError SpellBad
+highlight link SyntasticWarning SpellCap
 
 let g:clang_format#code_style = "chromium"
 let g:ycm_global_ycm_extra_conf = '$HOME/.ycm_extra_conf.py'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|.git|public'
+let g:ctrlp_working_path_mode = 0
+
+set encoding=utf-8 " for you complete me?
+set autoread
+set autowrite
+"set autochdir
+
+" no more shift, thanks god
+nnoremap ; :
+vnoremap ; :
+" esc in insert mode
+inoremap kj <esc>
+imap <C-L> <Esc>
+" esc in command mode
+cnoremap kj <C-C>

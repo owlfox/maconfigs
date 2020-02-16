@@ -33,7 +33,7 @@ flags = [
 # a "-std=<something>".
 # For a C project, you would set this to something like 'c99' instead of
 # 'c++11'.
-'-std=c++11',
+'-std=c++17',
 # ...and the same thing goes for the magic -x option which specifies the
 # language that the files to be compiled are written in. This is mostly
 # relevant for c++ headers.
@@ -46,9 +46,16 @@ flags = [
 '/usr/local/include',
 '-isystem',
 '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1',
-'-isystem',
+'-Wundefined-internal',
 '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include',
+"-isystem/Users/mchen/.conan/data/catch2/2.11.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include",
+"-isystem/Users/mchen/.conan/data/xtensor/0.21.3/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include",
+"-isystem/Users/mchen/.conan/data/fftw/3.3.8/bincrafters/stable/package/b05c9361d2fc78ce095b2b1ad41da46e99b9f5d5/include",
+"-isystem/Users/mchen/.conan/data/xtl/0.6.9/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include",
+"-isystem/Users/mchen/.conan/data/nlohmann_json/3.7.3/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include",
+"-isystem/Users/mchen/.conan/data/xsimd/7.4.4/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"
 ]
+
 
 
 # Set this to the absolute path to the folder (NOT the file!) containing the

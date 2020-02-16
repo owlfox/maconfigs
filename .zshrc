@@ -97,4 +97,8 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias his="history"
 alias tmux="tmux -u"
+alias vag="vagrant"
 bindkey -v
+
+# auto-complete https://github.com/zsh-users/zsh-autosuggestions
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh

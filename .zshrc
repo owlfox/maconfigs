@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/mchen/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -101,4 +101,5 @@ alias vag="vagrant"
 bindkey -v
 
 # auto-complete https://github.com/zsh-users/zsh-autosuggestions
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+plugins=(zsh-autosuggestions)

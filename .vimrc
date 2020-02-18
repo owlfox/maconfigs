@@ -82,4 +82,4 @@ imap <C-L> <Esc>
 cnoremap kj <C-C>
 
 nnoremap <F2> :YcmCompleter GoToDefinition <CR>
-nnoremap <C-I> :YcmCompleter GoToInclude <CR>
+nnoremap <F3> :YcmCompleter GoToInclude <CR>

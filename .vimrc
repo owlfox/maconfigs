@@ -55,6 +55,7 @@ set textwidth=120
 set t_Co=256
 set number relativenumber
 
+hi Comment ctermfg=LightBlue
 "highlight Pmenu ctermfg=2 ctermbg=3 guifg=#ffffff guibg=#0000ff
 " need to change the color of highlight... turn it off for now
 highlight clear SpellBad

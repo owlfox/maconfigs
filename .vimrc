@@ -80,3 +80,6 @@ inoremap kj <esc>
 imap <C-L> <Esc>
 " esc in command mode
 cnoremap kj <C-C>
+
+nnoremap <F2> :YcmCompleter GoToDefinition <CR>
+nnoremap <C-I> :YcmCompleter GoToInclude <CR>
